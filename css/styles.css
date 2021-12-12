@@ -1,0 +1,98 @@
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.sectionHeader {
+  font-size: 60px;
+  margin: 10px;
+}
+
+.row {
+  margin: 10px;
+  width: 100%;
+
+  display: flex;
+}
+
+.column {
+  width: 50%;
+  margin: 10px;
+}
+
+.poem {
+  border: 3px solid rgb(30, 12, 50);
+  display: inline-block;
+  padding: 10px;
+  font-size: 30px;
+  margin: 15px;
+  background-color: rgb(243, 186, 186);
+}
+.heading {
+  margin: 10px;
+  font-size: 60px;
+  text-align: center;
+  background-color: rgb(169, 131, 175);
+  width: 100%;
+}
+.timePeriodTitle {
+  font-size: 45px;
+  font-family: Playfair Display;
+  margin: 10px;
+  background-color: rgb(200, 154, 206);
+  display: inline-block;
+  margin: 10px;
+}
+.highlight2 {
+  background-color: rgb(169, 131, 175);
+  margin: 8px;
+}
+.summary {
+  font-size: 30px;
+  background-color: rgb(210, 216, 168);
+  margin: 10px;
+}
+.analysis {
+  font-size: 30px;
+  background-color: rgb(232, 245, 132);
+}
+.picture {
+  width: 50%;
+  height: 90%;
+  margin: 10px;
+}
